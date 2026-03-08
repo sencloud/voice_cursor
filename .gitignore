@@ -1,0 +1,112 @@
+# ─────────────────────────────────────────────
+#  Python
+# ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec.bak
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ─────────────────────────────────────────────
+#  Virtual environments
+# ─────────────────────────────────────────────
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# ─────────────────────────────────────────────
+#  Model / large binary files
+#  (Whisper model.bin ≈ 1.5 GB — exceeds GitHub's 100 MB limit)
+# ─────────────────────────────────────────────
+resources/whisper-*/model.bin
+resources/whisper-*/ggml-*.bin
+*.bin
+
+# ─────────────────────────────────────────────
+#  Runtime / user data
+# ─────────────────────────────────────────────
+*.wav
+*.mp3
+*.ogg
+*.flac
+temp/
+tmp/
+logs/
+*.log
+
+# App config stored in user home directory — not part of the repo
+# (~/.voice_cursor/config.json is written at runtime)
+
+# ─────────────────────────────────────────────
+#  IDE & editor
+# ─────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─────────────────────────────────────────────
+#  Windows
+# ─────────────────────────────────────────────
+desktop.ini
+$RECYCLE.BIN/
+
+# ─────────────────────────────────────────────
+#  Secrets / credentials  (never commit these)
+# ─────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+secrets.json
+api_keys.json
